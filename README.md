@@ -35,6 +35,8 @@ before it's allowed into application state.
 
 Requirements: Node 18+.
 
+### Local development
+
 ```bash
 npm install
 cp .env.example .env
@@ -55,6 +57,21 @@ Backend and frontend can also be run separately if you prefer two terminals:
 npm run server   # backend only, port 3001
 npm run dev       # frontend only, port 5173 (proxies /api to 3001)
 ```
+
+### Deploy to Vercel
+
+This project is ready to deploy to Vercel with the frontend and serverless API routes in the `api/` folder.
+
+1. Push the repo to GitHub.
+2. Import it in Vercel.
+3. Add these environment variables in Vercel Project Settings → Environment Variables:
+   - `GROQ_API_KEY`
+   - `GROQ_MODEL` (optional)
+4. Deploy.
+
+Vercel will serve the Vite frontend and expose the API routes at:
+- `/api/generate`
+- `/api/refine`
 
 ### Using a different AI provider
 

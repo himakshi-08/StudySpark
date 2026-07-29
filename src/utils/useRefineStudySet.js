@@ -30,7 +30,7 @@ export function useRefineStudySet() {
     setError(null);
 
     try {
-      const response = await fetch("/api/refine", {
+      const response = await fetch(import.meta.env.PROD ? "/api/refine" : "/api/refine", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ currentData, instruction }),
