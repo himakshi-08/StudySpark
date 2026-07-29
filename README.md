@@ -92,10 +92,6 @@ it receives, not which provider produced it.
 
 ## Stretch goals implemented
 
-Of the five optional stretch items, I implemented three and intentionally
-skipped two — reasoning below, since "why" matters more here than "did I do
-all of them."
-
 **Save & reload sessions** — every generated study set is saved to
 `localStorage` (`src/utils/sessionStorage.js`), and the start screen shows
 a "Continue a saved session" list. No login needed since it's local to the
@@ -220,13 +216,3 @@ logic in `useGenerateStudySet.js` and the validation rules in
   intended (validation still guarantees the *shape* is correct either way).
 - The AI occasionally produces flashcards/quiz questions that overlap in
   content since there's no de-duplication step against the model's output.
-
-## Time spent
-
-~8 hours core assignment: architecture and validation logic (~2.5h), backend
-proxy (~1h), flashcard/quiz UI and flip interaction (~2.5h), error/loading
-states and stale-request handling (~1h), styling and mobile responsiveness (~1h).
-
-Plus ~2 hours on stretch goals: save/reload sessions (~40m), refinement
-loop including the new backend endpoint (~50m), dark mode + keyboard nav
-(~30m).
