@@ -6,6 +6,8 @@ retest just the questions you got wrong.
 
 Built for the frontend internship assignment.
 
+**🚀 Live Demo:** https://study-spark-git-main-himakshis-projects-1bbbb23b.vercel.app/
+
 ## How it works
 
 ```
