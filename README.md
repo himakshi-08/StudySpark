@@ -115,22 +115,6 @@ preference on first load), keyboard navigation, and animation throughout:
   session list, quiz results), plus small tactile touches (button/option
   press feedback) — all respect `prefers-reduced-motion`
 
-**Skipped: streaming.** The app's core design choice is "validate the
-*whole* response before any of it enters state" — that's what makes
-malformed/wrong-shape output safe to reject outright. Streaming means
-rendering partial JSON before you know it's well-formed, which either means
-parsing incomplete JSON (fragile) or building a second, more lenient
-parser just for the streaming path — undermining the one thing this
-assignment weights most heavily. Doable with more time budget, but not a
-good trade against the 8-hour constraint.
-
-**Skipped: mixed block types (card/chart/checklist).** This stretch goal
-reads as written for the recipe or trip-planner picks, where different
-step types are a natural product need. For a study assistant, flashcards
-and quiz questions are already the "blocks" the assignment separately
-asks for by name — inventing extra block types here would be adding
-complexity without a real product reason for it.
-
 ## Project structure
 
 ```
