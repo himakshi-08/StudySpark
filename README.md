@@ -8,6 +8,8 @@ Built for the frontend internship assignment.
 
 **🚀 Live Demo:** https://study-spark-git-main-himakshis-projects-1bbbb23b.vercel.app/
 
+**📹 Demo Video:** https://drive.google.com/file/d/1gMZjsOG19aPzSOy8G_X9NOpddgxa2mjB/view?usp=sharing
+
 ## How it works
 
 ```
